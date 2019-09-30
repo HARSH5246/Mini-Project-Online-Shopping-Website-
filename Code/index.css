@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(192,192,192,0.6);
+}
+/* First Navbar */
+#size input[type=search]{
+	width: 430px;
+	margin-left: -3%;
+}
+#shop{
+	color: white;
+	font-weight: bold;
+	margin-left: 10%;
+}
+#navbarSupportedContent li{
+    margin-left: 20px;
+}
+#navbarSupportedContent li a{
+	color: white;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+/* Second Navbar */
+#secondtop{
+    margin-top: 4.45%;
+}
+#navbarSupportedContent1 ul li{
+	margin: 0 20px;
+}
+#navbarSupportedContent1 ul li a{
+	color: rgba(0,0,0,0.7);
+}
+#navbarSupportedContent1 .dropdown:hover>.dropdown-menu{
+    display: block;
+    border: 0;
+    background-color: ghostwhite;
+}
+#secondtop .active{
+    background-color: palevioletred;
+}
+
+/* Image Slider */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+#demo{
+    margin-top: 5px;
+}
+#demo img{
+    height: 300px;
+}
+/* Image Slider End */
+
+/* Boxes */
+#advantage{
+    margin-top: -22px;
+}
+#advantage .thumbnail{
+    border: 1px solid white;
+    width: 27.5rem;
+    height: 250px;
+    margin-left: -10px;
+}
+#advantage img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Boxes End */
+
+/* Content */
+#content{
+    width: 99.1%;
+    margin-top: 10px;
+    background: #fff;
+
+}
+#content .text{
+    border-bottom: 1px solid silver;
+    width: 104.8%;
+    margin-top: -4%;
+    margin-left: -30px;
+}
+#content h3{
+    margin-left: 1%;
+}
+#content .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+#content .column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    position: relative;
+}
+#content .column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 230px;
+}
+#content .firsttext{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.2em;
+}
+#content .firsttext p:nth-child(odd){
+    margin-top: -4%;
+}
+#content .firsttext p:nth-child(even){
+    margin-top: -1%;
+}
+
+#content .overlay{
+    position: absolute;
+    bottom: 38%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
+    width: 98%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#content button{
+    margin-right: 10px;
+}
+#content .column:hover .overlay{
+    opacity: 1;
+}
+/* Content End */
+/* Index Page End */
+
+/* Shop.php Start */
+
+/* Breadcrumb */
+#breadcrumb{
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+/* Footer */
+#footerimage{
+    color: white;
+    margin-top: -2%;
+}
+/* Footer End */
+
+
+
+@media screen and (max-width:800px){
+    #secondtop{
+        margin-top: 2%;
+    }
+    #content .text{
+        margin-top: -8%;
+        width: 109.5%;
+    }
+    #content .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:576px){
+    #secondtop{
+        margin-top: 11%;
+    }
+    #content .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    #content .text{
+        margin-top: -4%;
+        width: 109%;
+    }
+    #content h3{
+        margin-left: 4%;
+    }
+    #advantage .thumbnail{
+        width: 105%;
+    }
+}
