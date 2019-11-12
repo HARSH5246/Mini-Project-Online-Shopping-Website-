@@ -21,6 +21,9 @@
             $internalMemory = implode("','",$_POST['internalMemory']);
             $sql .="AND InternalMemory IN('".$internalMemory."')";
         }
+        if(isset($_POST['searchName'])){
+            $sql .= "AND Name like '%".$_POST['searchName']."%'";
+        }
         $stmt = $conn->prepare($sql);
        
                         $stmt->bind_param("i",$_SESSION['catId']);
@@ -75,6 +78,9 @@
             $hardDisk = implode("','",$_POST['hardDisk']);
             $sql .="AND HardDisk IN('".$hardDisk."')";
         }
+        if(isset($_POST['searchName'])){
+            $sql .= "AND Name like '%".$_POST['searchName']."%'";
+        }
 
         $stmt = $conn->prepare($sql);
        
@@ -127,6 +133,9 @@
             $speakerOutput = implode("','",$_POST['speakerOutput']);
             $sql .="AND SpeakerOutput IN('".$speakerOutput."')";
         }
+        if(isset($_POST['searchName'])){
+            $sql .= "AND Name like '%".$_POST['searchName']."%'";
+        }
 
        $stmt = $conn->prepare($sql);
        
@@ -172,6 +181,9 @@
         if(isset($_POST['weight'])){
             $weight = implode("','",$_POST['weight']);
             $sql .="AND Weight IN('".$weight."')";
+        }
+        if(isset($_POST['searchName'])){
+            $sql .= "AND Name like '%".$_POST['searchName']."%'";
         }
 
         $stmt = $conn->prepare($sql);

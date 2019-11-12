@@ -35,21 +35,9 @@
                 <span class="sr-only"></span>
                 <i class="fa fa-align-justify"></i>
             </button>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#search" aria-controls="search" aria-expanded="false" aria-label="Search navigation">
-                <span class="sr-only"></span>
-                <i class="fa fa-search"></i>
-            </button>
-
-            <span class="collapse navbar-collapse" id="search">
-                <form class="form-inline my-2 my-lg-0 ml-4" method="get" action="result.php" id="size">
-                    <input class="form-control mr-sm-2" type="search" name="user_query" placeholder="Search" required>
-                    <button type="submit" value="Search" name="search" class="btn btn-primary"><i class="fa fa-search fa-lg"></i></button>
-                </form>
-            </span>
-
-
+           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-5">
+                <ul class="navbar-nav mr-5 ml-auto ">
                     <li class="nav-item " style="display:<?php if($username != "guest"){echo "none";} ?>;">
                         <a class="nav-link" href="login.php">Login</a>
                     </li>
@@ -162,51 +150,35 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="details.php"><img src="Images/8.1.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="laptop.php"><img src="Images/laptop/ZenBookPro15.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>ZenBook Pro 15</b></h4>
+                    <p>Ryzen 5 Processsor</p>
+                    <p><b>&#x20b9;2,04,990</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/dsBuffer.bmp.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="refrigerator.php"><img src="Images/Refrigerator/Bosch618LFrost.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>618 L Frost</b></h4>
+                    <p>Side by Side door</p>
+                    <p><b>&#x20b9;65,999</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/1.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="mobiles.php"><img src="Images/Phone/6z.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Asus 6Z</b></h4>
+                    <p>8 GB RAM</p>
+                    <p><b>&#x20b9;35,999</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/4.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="television.php"><img src="Images/Television/SamsungSuper6.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Samsung Super 6</b></h4>
+                    <p>43 inch Size</p>
+                    <p><b>&#x20b9;36,999</b></p>
                 </div>
             </div>
         </div>
@@ -218,17 +190,17 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 col-12">
                 <div class="thumbnail">
-                    <a href="details.phdetails.php"><img src="Images/card1.jpg" alt=""></a>
+                    <img src="Images/card1.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-12">
                 <div class="thumbnail">
-                    <a href="details.phdetails.php"><img src="Images/card1.jpg" alt=""></a>
+                    <img src="Images/card1.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-12">
                 <div class="thumbnail">
-                    <a href="details.phdetails.php"><img src="Images/card1.jpg" alt=""></a>
+                    <img src="Images/card1.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -241,51 +213,35 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="details.php"><img src="Images/5.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="mobiles.php"><img src="Images/Phone/8c.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Honor 8c</b></h4>
+                    <p>Snapdragon 632</p>
+                    <p><b>&#x20b9;8,999</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/6.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="laptop.php"><img src="Images/laptop/mac.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Apple MacBook</b></h4>
+                    <p>8 GB RAM</p>
+                    <p><b>&#x20b9;67,990</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/7.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="television.php"><img src="Images/Television/MicromaxCanvas81cm.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Micromax Canvas</b></h4>
+                    <p>32 inch Size</p>
+                    <p><b>&#x20b9;11,999</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/2.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="refrigerator.php"><img src="Images/Refrigerator/Godrej190L.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Godrej</b></h4>
+                    <p>220 Kg Weight</p>
+                    <p><b>&#x20b9;35,999</b></p>
                 </div>
             </div>
         </div>
@@ -296,17 +252,17 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 col-12">
                 <div class="thumbnail">
-                    <a href="details.php"><img src="Images/card1.jpg" alt=""></a>
+                    <img src="Images/card1.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-12">
                 <div class="thumbnail">
-                    <a href="details.php"><img src="Images/card1.jpg" alt=""></a>
+                    <img src="Images/card1.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-12">
                 <div class="thumbnail">
-                    <a href="details.php"><img src="Images/card1.jpg" alt=""></a>
+                    <img src="Images/card1.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -319,51 +275,35 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="details.php"><img src="Images/2.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="mobiles.php"><img src="Images/Phone/F11pro.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Oppo F11 Pro</b></h4>
+                    <p>MediaTek Helio P70</p>
+                    <p><b>&#x20b9;20,999</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/2.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="laptop.php"><img src="Images/laptop/Inspiron5000.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Dell Inspiron 15</b></h4>
+                    <p>Ryzen 5 Processor</p>
+                    <p><b>&#x20b9;49,950</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/2.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="refrigerator.php"><img src="Images/Refrigerator/Samsung%20345%20L%20Frost%20Free%20Double%20Door.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Samsung 345 L</b></h4>
+                    <p>Double door</p>
+                    <p><b>&#x20b9;52,999</b></p>
                 </div>
             </div>
             <div class="column">
-                <a href="details.php"><img src="Images/2.png" alt="" style="width:100%;"></a>
-                <div class="overlay">
-                    <a href="details.php"><button type="button" class="btn btn-primary">Details</button></a>
-                    <a href="details.php"><button type="button" class="btn btn-primary">Add To Cart</button></a>
-                </div>
+                <a href="television.php"><img src="Images/Television/SonyBraviaW800F.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
-                    <h4><b>Bottle</b></h4>
-                    <p>Russian Rum</p>
-                    <p><b>&#x20b9;2999</b></p>
+                    <h4><b>Sony Bravia</b></h4>
+                    <p>52 inch Size</p>
+                    <p><b>&#x20b9;67,990</b></p>
                 </div>
             </div>
         </div>

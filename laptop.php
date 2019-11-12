@@ -41,7 +41,7 @@
 
             <span class="collapse navbar-collapse" id="search">
                 <form class="form-inline my-2 my-lg-0 ml-4" method="get" action="result.php" id="size">
-                    <input class="form-control mr-sm-2" type="search" name="user_query" placeholder="Search" required>
+                    <input class="form-control mr-sm-2" type="search" name="user_query" placeholder="Search" id="searchBar" required>
                     <button type="submit" value="Search" name="search" class="btn btn-primary"><i class="fa fa-search fa-lg"></i></button>
                 </form>
             </span>
@@ -73,7 +73,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                 <ul class="navbar-nav ml-auto mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link btn btn-success" href="#"><?php echo $username;?></a>
+                         <a class="nav-link" href="#" style="font-weight:bold;font-size:1.2em;color:deepred;"><?php echo $username;?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
@@ -316,6 +316,23 @@
                     }
                 });
            }
+            
+        $("#search").keyup(function(){
+              
+                var action = 'filterLaptops';
+               $.ajax({
+                    url: 'action.php',
+                    type: 'POST',
+                    data: {
+                        action: action,
+                        searchName: document.getElementById('searchBar').value
+                                            },
+                    success: function(response) {
+                        $("#result").html(response);
+                        $("#textChange").text("Filtered Products");  
+                    }
+                });
+           });
 
         $(document).ready(function() {
             $(".product_check").click(function() {

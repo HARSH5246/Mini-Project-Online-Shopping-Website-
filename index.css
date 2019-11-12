@@ -41,6 +41,7 @@ body{
 #navbarSupportedContent1 ul li a:hover{
     background-color: dodgerblue;
     border-radius: 5px;
+    color: #fff;
     transition: all 0.3s ease-in;
 }
 
@@ -49,11 +50,8 @@ body{
     border: 0;
     background-color: ghostwhite;
 }
-#secondtop .active{
-    background-color: ;
-    border-radius: ;
-    width: ;
-    
+#navbarSupportedContent1 .active{
+    color: black;
 }
 
 /* Image Slider */

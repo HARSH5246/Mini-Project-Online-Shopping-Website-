@@ -52,19 +52,7 @@
                 <span class="sr-only"></span>
                 <i class="fa fa-align-justify"></i>
             </button>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#search" aria-controls="search" aria-expanded="false" aria-label="Search navigation">
-                <span class="sr-only"></span>
-                <i class="fa fa-search"></i>
-            </button>
-
-            <span class="collapse navbar-collapse" id="search">
-                <form class="form-inline my-2 my-lg-0 ml-4" method="get" action="result.php" id="size">
-                    <input class="form-control mr-sm-2" type="search" name="user_query" placeholder="Search" required>
-                    <button type="submit" value="Search" name="search" class="btn btn-primary"><i class="fa fa-search fa-lg"></i></button>
-                </form>
-            </span>
-
-
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-5">
                     <li class="nav-item " style="visibility:<?php if($username != "guest"){echo "hidden";} ?>;">
@@ -91,7 +79,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                 <ul class="navbar-nav ml-auto mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link btn btn-success" href="#"><?php echo $username;?></a>
+                         <a class="nav-link" href="#" style="font-weight:bold;font-size:1.2em;color:deepred;"><?php echo $username;?></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="index.php">Home</a>
