@@ -88,7 +88,7 @@
                                 $result = $conn->query($sql);
                                 while($row=$result->fetch_assoc()){
                                 ?>
-                                  <a class="dropdown-item" onclick="setCatg(this)" href="<?php echo $row['cat_name']; ?>.php"><?= $row['cat_name'] ?></a>
+                                  <a class="dropdown-item" onclick="setCatg(this.innerHTML)" href="<?php echo $row['cat_name']; ?>.php"><?= $row['cat_name'] ?></a>
                               <?php } ?>
                         </div>
                     </li>
@@ -99,13 +99,10 @@
                         <a class="nav-link" href="cart.php">Shopping Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About Us</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.php">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.php">Contact Us</a>
+                        <a class="nav-link" href="index.php#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="cart.php">
@@ -121,9 +118,9 @@
     <div class="container-fluid">
         <div class="row"> <!-- Mobiles Content -->
             <div class="col-lg-3"> <!-- Mobiles sidebar Content(Filtering) -->
-                <h5 class="text-center">Filter Product</h5>
+                <h5 class="text-center mt-1">Filters</h5>
                 <hr>
-                <h6 class="text-info">Select Brand</h6>
+                <h6 class="text-muted text-center">Select Brand</h6>
                 <ul class="list-group">
                     <?php
                         
@@ -144,7 +141,8 @@
                     </li>
                     <?php } ?>
                 </ul>
-                <h6 class="text-info">Select Ram</h6>
+                <br>
+                <h6 class="text-muted text-center">Select Ram</h6>
                 <ul class="list-group">
                     <?php
                         
@@ -163,7 +161,8 @@
                     </li>
                     <?php } ?>
                 </ul>
-                <h6 class="text-info">Select InternalMemory</h6>
+                <br>
+                <h6 class="text-muted text-center">Select InternalMemory</h6>
                 <ul class="list-group">
                     <?php
                         
@@ -200,9 +199,9 @@
                         
                         while($row=$result->fetch_assoc()){
                     ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="size">
                         <div class="card-deck">
-                            <div class="card border-secondary">
+                            <div class="card border-info rounded">
                                 <img src="<?= $row['Image']; ?>" class="card-img-top">
                                 <div class="card-img-overlay" data-fcamera="<?= $row['Front Camera']; ?>" data-rcamera="<?= $row['Rear Camera']; ?>" data-brand="<?= $row['Brand']; ?>" data-name="<?= $row['Name']; ?>" data-price="<?= $row['Price']; ?>" data-ram="<?= $row['Ram']; ?>" data-internal="<?= $row['InternalMemory']; ?>" data-processor="<?= $row['Processor']; ?>" data-battery="<?= $row['Battery']; ?>" data-display="<?= $row['Display']; ?>" data-rearcamera="<?= $row['Rear Camera']; ?>" data-frontcamera="<?= $row['Front Camera']; ?>" data-id="<?= $row['Id']; ?>" data-code="<?= $row['productCode']; ?>">
                                     <h6 class="text-light bg-info text-center rounded p-1" style="margin-top: 175px;cursor:pointer;" data-toggle="modal" data-target="#modalAbandonedCart" onclick="showpopup(this)"><?= $row['Name']; ?></h6>
@@ -321,14 +320,14 @@
         
          function setCatg(x)
            { 
-               var cat_name = x.innerHTML;
+               
                var action = 'data';
                $.ajax({
                     url: 'setCatg.php',
                     type: 'POST',
                     data: {
                         action: action,
-                        cat_name: cat_name
+                        cat_name: x
                                             },
                     success: function(response) {
                         alert(response);  

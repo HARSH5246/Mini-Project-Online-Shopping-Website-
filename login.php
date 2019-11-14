@@ -1,4 +1,3 @@
-
 <?php 
 
 session_start();
@@ -9,8 +8,6 @@ if(isset($_SESSION['username']))
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="">
 
@@ -19,15 +16,20 @@ if(isset($_SESSION['username']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login System</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style type="text/css">
-    #alert,#register-box,#forgot-box
-        {
-            display: none;
+    <style>
+        body{
+        /*    background: -webkit-linear-gradient(to right, #c33764, #1d2671); */
+            background-image: linear-gradient(to right, #6600CC, #660033, #000033, #330000, #330066, #6600cc);
+            
         }
+        #alert,#register-box,#forgot-box
+            {
+                display: none;
+            }
     </style>
 </head>
 
-<body class="bg-dark">
+<body>
    <div class="container mt-4">
        <div class="row">
            <div class="col-lg-4 offset-lg-4" id="alert">

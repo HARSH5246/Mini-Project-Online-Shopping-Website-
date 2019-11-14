@@ -1,9 +1,10 @@
 <?php
 
 include 'Include/config.php';
+include 'session.php';
 
-if(!isset($_SESSION))
-    {session_start();}
+//if(!isset($_SESSION))
+ //   {session_start();}
 
 if(isset($_POST['action']))
 {
@@ -22,7 +23,5 @@ else
 {
     echo "Action not found";
 }
-
-
 
 ?>

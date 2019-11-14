@@ -88,7 +88,7 @@
                             $result = $conn->query($sql);
                             while($row=$result->fetch_assoc()){
                             ?>
-                          <a class="dropdown-item" onclick="setCatg(this)" href="<?php echo $row['cat_name']; ?>.php"><?= $row['cat_name'] ?></a>
+                          <a class="dropdown-item" onclick="setCatg(this.innerHTML)" href="<?php echo $row['cat_name']; ?>.php"><?= $row['cat_name'] ?></a>
                           <?php } ?>
                         </div>
                     </li>
@@ -99,13 +99,10 @@
                         <a class="nav-link" href="cart.php">Shopping Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About Us</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.php">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.php">Contact Us</a>
+                        <a class="nav-link" href="index.php#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="cart.php">
@@ -120,11 +117,11 @@
     
    
     <div class="container-fluid">
-        <div class="row"> <!-- Mobiles Content -->
-            <div class="col-lg-3"> <!-- Mobiles sidebar Content(Filtering) -->
-                <h5 class="text-center">Filter Product</h5>
+        <div class="row"> <!-- Refrigerator Content -->
+            <div class="col-lg-3"> <!-- Refrigerator sidebar Content(Filtering) -->
+                <h5 class="text-center mt-1">Filters</h5>
                 <hr>
-                <h6 class="text-info">Select Brand</h6>
+                <h6 class="text-muted text-center">Select Brand</h6>
                 <ul class="list-group">
                     <?php
                         $stmt = $conn->prepare("SELECT DISTINCT Brand FROM products where categoryId = ? ORDER BY Brand");
@@ -142,7 +139,8 @@
                     </li>
                     <?php } ?>
                 </ul>
-                <h6 class="text-info">Select Weight</h6>
+                <br>
+                <h6 class="text-muted text-center">Select Weight</h6>
                 <ul class="list-group">
                     <?php
                         $stmt = $conn->prepare("SELECT DISTINCT Weight FROM products where categoryId = ? ORDER BY Weight");
@@ -160,10 +158,9 @@
                     </li>
                     <?php } ?>
                 </ul>
-                
-            </div>  <!-- Mobiles sidebar Content(Filtering) End -->
+            </div>  <!-- Refrigerator sidebar Content(Filtering) End -->
             
-            <div class="col-lg-9">  <!-- Mobiles Main Content(Products) -->
+            <div class="col-lg-9">  <!-- Refrigerator Main Content(Products) -->
                 <h5 class="text-center mt-1" id="textChange">All Products</h5>
                 <hr class="mt-2">
                 <div class="row" id="result">
@@ -176,7 +173,7 @@
                         $result = $stmt->get_result();
                         while($row=$result->fetch_assoc()){
                     ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="size">
                         <div class="card-deck">
                             <div class="card border-secondary">
                                 <img src="<?= $row['Image']; ?>" class="card-img-top">
@@ -196,8 +193,8 @@
                     </div>
                     <?php } ?>
                 </div>
-            </div> <!-- Mobiles Main Content(Products) End-->
-        </div> <!-- Mobiles Content End -->
+            </div> <!-- Refrigerator Main Content(Products) End-->
+        </div> <!-- Refrigerator Content End -->
     </div><!-- Container-fluid End -->
     
    
@@ -284,14 +281,14 @@
         
          function setCatg(x)
            { 
-               var cat_name = x.innerHTML;
+              
                var action = 'data';
                $.ajax({
                     url: 'setCatg.php',
                     type: 'POST',
                     data: {
                         action: action,
-                        cat_name: cat_name
+                        cat_name: x
                                             },
                     success: function(response) {
                         alert(response);  

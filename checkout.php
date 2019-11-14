@@ -105,13 +105,10 @@
                         <a class="nav-link" href="cart.php">Shopping Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About Us</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.php">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.php">Contact Us</a>
+                        <a class="nav-link" href="index.php#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="cart.php">

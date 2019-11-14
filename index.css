@@ -33,7 +33,7 @@ body{
     margin-top: 4.45%;
 }
 #navbarSupportedContent1 ul li{
-	margin: 0 20px;
+	margin: 0 30px;
 }
 #navbarSupportedContent1 ul li a{
 	color: rgba(0,0,0,0.7);
@@ -156,7 +156,9 @@ body{
     font-size: 1.4em;
     font-family: sans-serif;
 }
-
+#size{
+    margin-bottom: 2%;
+}
 
 #popupimage{
     margin-left: 10%;

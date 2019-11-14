@@ -77,7 +77,7 @@
                             $result = $conn->query($sql);
                             while($row=$result->fetch_assoc()){
                             ?>
-                          <a class="dropdown-item" onclick="setCatg(this)" href="<?php echo $row['cat_name']; ?>.php"><?= $row['cat_name'] ?></a>
+                          <a class="dropdown-item" onclick="setCatg(this.innerHTML)" href="<?php echo $row['cat_name']; ?>.php"><?= $row['cat_name'] ?></a>
                           <?php } ?>
                         </div>
                     </li>
@@ -88,13 +88,10 @@
                         <a class="nav-link" href="cart.php">Shopping Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About Us</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.php">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.php">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="cart.php">
@@ -150,7 +147,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="laptop.php"><img src="Images/laptop/ZenBookPro15.png" alt="" style="width:100%;"></a>
+                <a href="laptop.php" onclick="setCatg('laptop')"><img src="Images/laptop/ZenBookPro15.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>ZenBook Pro 15</b></h4>
                     <p>Ryzen 5 Processsor</p>
@@ -158,7 +155,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="refrigerator.php"><img src="Images/Refrigerator/Bosch618LFrost.png" alt="" style="width:100%;"></a>
+                <a href="refrigerator.php" onclick="setCatg('refrigerator')"><img src="Images/Refrigerator/Bosch618LFrost.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>618 L Frost</b></h4>
                     <p>Side by Side door</p>
@@ -166,7 +163,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="mobiles.php"><img src="Images/Phone/6z.png" alt="" style="width:100%;"></a>
+                <a href="mobiles.php" onclick="setCatg('mobiles')"><img src="Images/Phone/6z.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Asus 6Z</b></h4>
                     <p>8 GB RAM</p>
@@ -174,7 +171,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="television.php"><img src="Images/Television/SamsungSuper6.png" alt="" style="width:100%;"></a>
+                <a href="television.php" onclick="setCatg('television')"><img src="Images/Television/SamsungSuper6.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Samsung Super 6</b></h4>
                     <p>43 inch Size</p>
@@ -213,7 +210,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="mobiles.php"><img src="Images/Phone/8c.png" alt="" style="width:100%;"></a>
+                <a href="mobiles.php" onclick="setCatg('mobiles')"><img src="Images/Phone/8c.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Honor 8c</b></h4>
                     <p>Snapdragon 632</p>
@@ -221,7 +218,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="laptop.php"><img src="Images/laptop/mac.png" alt="" style="width:100%;"></a>
+                <a href="laptop.php" onclick="setCatg('laptop')"><img src="Images/laptop/mac.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Apple MacBook</b></h4>
                     <p>8 GB RAM</p>
@@ -229,7 +226,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="television.php"><img src="Images/Television/MicromaxCanvas81cm.png" alt="" style="width:100%;"></a>
+                <a href="television.php" onclick="setCatg('television')"><img src="Images/Television/MicromaxCanvas81cm.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Micromax Canvas</b></h4>
                     <p>32 inch Size</p>
@@ -237,7 +234,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="refrigerator.php"><img src="Images/Refrigerator/Godrej190L.png" alt="" style="width:100%;"></a>
+                <a href="refrigerator.php" onclick="setCatg('refrigerator')"><img src="Images/Refrigerator/Godrej190L.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Godrej</b></h4>
                     <p>220 Kg Weight</p>
@@ -275,7 +272,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="mobiles.php"><img src="Images/Phone/F11pro.png" alt="" style="width:100%;"></a>
+                <a href="mobiles.php" onclick="setCatg('mobiles')"><img src="Images/Phone/F11pro.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Oppo F11 Pro</b></h4>
                     <p>MediaTek Helio P70</p>
@@ -283,7 +280,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="laptop.php"><img src="Images/laptop/Inspiron5000.png" alt="" style="width:100%;"></a>
+                <a href="laptop.php" onclick="setCatg('laptop')"><img src="Images/laptop/Inspiron5000.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Dell Inspiron 15</b></h4>
                     <p>Ryzen 5 Processor</p>
@@ -291,7 +288,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="refrigerator.php"><img src="Images/Refrigerator/Samsung%20345%20L%20Frost%20Free%20Double%20Door.png" alt="" style="width:100%;"></a>
+                <a href="refrigerator.php" onclick="setCatg('refrigerator')"><img src="Images/Refrigerator/Samsung%20345%20L%20Frost%20Free%20Double%20Door.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Samsung 345 L</b></h4>
                     <p>Double door</p>
@@ -299,7 +296,7 @@
                 </div>
             </div>
             <div class="column">
-                <a href="television.php"><img src="Images/Television/SonyBraviaW800F.png" alt="" style="width:100%;"></a>
+                <a href="television.php" onclick="setCatg('television')"><img src="Images/Television/SonyBraviaW800F.png" alt="" style="width:100%;"></a>
                 <div class="firsttext">
                     <h4><b>Sony Bravia</b></h4>
                     <p>52 inch Size</p>
@@ -314,7 +311,7 @@
 <footer class="page-footer font-small mdb-color bg-dark pt-4" id="footerimage">
 
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+  <div class="container text-center text-md-left" id="contact">
 
     <!-- Footer links -->
     <div class="row text-center text-md-left mt-3 pb-3">
@@ -334,16 +331,16 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Categories</h6>
         <p>
-          <a href="#!">Electronics</a>
+          <a href="mobiles.php">Mobiles</a>
         </p>
         <p>
-          <a href="#!">Clothes</a>
+          <a href="laptop.php">Laptops</a>
         </p>
         <p>
-          <a href="#!">Home & Furniture</a>
+          <a href="refrigerator.php">Refrigerators</a>
         </p>
         <p>
-          <a href="#!">Baby & Kids</a>
+          <a href="television.php">Televisions</a>
         </p>
       </div>
       <!-- Grid column -->
@@ -354,13 +351,13 @@
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
         <p>
-          <a href="checkout.php">Your Account</a>
+          <a href="orders.php">Your Orders</a>
         </p>
         <p>
           <a href="cart.php">Cart</a>
         </p>
         <p>
-          <a href="shop.php">Shop</a>
+          <a href="index.php">Home</a>
         </p>
         <p>
           <a href="contact.php">Contact Us</a>
@@ -387,7 +384,7 @@
     </div>
     <!-- Footer links -->
 
-    <hr>
+    <hr style="background-color:white;">
 
     <!-- Grid row -->
     <div class="row d-flex align-items-center">
@@ -396,7 +393,7 @@
       <div class="col-md-7 col-lg-8">
 
         <!--Copyright-->
-        <p class="text-center text-md-left">© 2018 Copyright:
+        <p class="text-center text-md-left">© 2019 Copyright:
           <a href="https://mdbootstrap.com/education/bootstrap/">
             <strong> MDBootstrap.com</strong>
           </a>
@@ -449,17 +446,17 @@
  <script>
       function setCatg(x)
            { 
-               var cat_name = x.innerHTML;
+               
                var action = 'data';
                $.ajax({
                     url: 'setCatg.php',
                     type: 'POST',
                     data: {
                         action: action,
-                        cat_name: cat_name
+                        cat_name: x
                                             },
                     success: function(response) {
-                        alert(response);  
+                       // alert(response);  
                     }
                 });
            }
